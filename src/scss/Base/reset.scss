@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+
+}
+
+body{
+    background-color: #010b25;
+    background-image: url("../../img/back/First.svg"), url("../../img/back/Second.svg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+
+a{
+    text-decoration: none;
+}
