@@ -77,9 +77,12 @@
         display: flex; 
         justify-content: center;
         .cards{
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 25px;
+        
+           
+            
             .firstCard{
                 border: 0.77px solid rgba(231, 235, 255, 1);
                 display: flex;
@@ -156,7 +159,8 @@
                     url("../../img/Patterns/SecondEclipse.svg") no-repeat calc(100% - 25px) center,
                     linear-gradient(-225deg, rgb(62, 132, 253), rgb(188, 202, 255));
                 border-radius: 25px;
-                border: 0.83px solid;
+                border: 0.83px solid rgba(231, 235, 255, 1);                
+                box-shadow: 0px 0px 45.83px 4.58px rgba(188, 202, 255, 0.2);
                 border-image-source: radial-gradient(103.58% 103.58% at 50% 50%, rgba(9, 89, 229, 0) 4.69%, #0959E5 100%);
 
 
@@ -242,8 +246,7 @@
                     }
                   }
                 }
-              }
-              
+            }  
             .thirdCard{
                 border: 0.77px solid rgba(231, 235, 255, 1);
 
@@ -307,6 +310,51 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainContainer{
+        .title{
+            h1{
+                width: 100%;
+            }
+        }
+        .cardsContainer{
+            .cards {
+                display: grid;
+        
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mainContainer{
+        .title{
+            h1{
+                width: 100%;
+            }
+            .buttons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .firstButton{
+                    width: 100%;
+                }
+            }
+        }
+        .cardsContainer{
+            .cards {
+                display: grid;
+        
+                grid-template-columns: repeat(1, 1fr);
+                gap: 25px;
             }
         }
     }
