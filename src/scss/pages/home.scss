@@ -18,11 +18,13 @@
         margin-bottom: 50px;
         .offre{
             padding: 10px 40px;
-            border: 2px solid rgb(7, 56, 185, 0.4);
             border-radius: 500px;
+            border: 0.92px solid rgba(151, 186, 255, 0.4);
+            background: radial-gradient(63.68% 148.21% at 48.57% -48.21%, rgba(7, 56, 185, 0.4) 0%, rgba(3, 25, 83, 0.4) 100%);
+
             p{
-                background: -webkit-linear-gradient(rgb(136, 179, 253, 1), rgb(82, 128, 209, 1), rgb(12
-                , 172, 255, 1));
+                background: linear-gradient(275.29deg, #88B3FD 36.84%, #5280D1 62.25%, #7CACFF 93.72%);
+
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
@@ -31,7 +33,7 @@
             width: 40%;
             text-align: center;
             span{
-                background: -webkit-linear-gradient(#043bcb, #043bcb, #88b3fd);
+                background: -webkit-linear-gradient(95deg, #043bcb, #043bcb, #88b3fd);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
@@ -41,13 +43,17 @@
             gap: 19px;
             cursor: pointer;
             .firstButton{
-                background: linear-gradient(#0A308b, #1E6Efb);
+                background: radial-gradient(51.41% 105.14% at 50.04% 105.14%, #0A308B 0%, #1E6EFB 100%);
+
                 padding: 10px 30px;
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
                 transition: .3s ease;
                 &:hover{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     scale: 1.05;
                 }
 
@@ -59,6 +65,9 @@
                 border-radius: 10px;
                 transition: .3s ease;
                 &:hover{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     scale: 1.05;
                 }
             }
@@ -72,15 +81,14 @@
             justify-content: center;
             gap: 25px;
             .firstCard{
-                border: 1px solid white;
-
+                border: 0.77px solid rgba(231, 235, 255, 1);
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
                 padding: 15px;
                 width: 286px;
                 height: 450px;
-                background: linear-gradient(rgb(3, 25, 83, 0.7), rgb(23, 112, 247, 0.7));
+                background: radial-gradient(103.02% 79.39% at 50.04% 100%, rgba(3, 25, 83, 0.7) 0%, rgba(23, 112, 247, 0.7) 100%);
                 border-radius: 25px;
                 p{
                     font-weight: bold;
@@ -125,95 +133,119 @@
                             border: 1px solid white;
                             border-radius: 7px;
                             transition: .3s ease;
+                            cursor: pointer;
                             &:hover{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
                                 scale: 1.05;
                             }
                         }
                     }
                 }
             }
-            .secondCard{
-                border: 1px solid white;
+            .secondCard {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
                 padding: 15px;
                 width: 337px;
                 height: 579px;
-                background: linear-gradient(rgb(168, 215, 253, 1), rgb(23, 112, 247, 0.7));
-                background-image: url("../../img/Patterns/FirstEclipse.svg"), url("../../img/Patterns/SecondEclipse.svg");
+                background: 
+                    url("../../img/Patterns/FirstEclipse.svg") no-repeat center center,
+                    url("../../img/Patterns/SecondEclipse.svg") no-repeat calc(100% - 25px) center,
+                    linear-gradient(-225deg, rgb(62, 132, 253), rgb(188, 202, 255));
                 border-radius: 25px;
-                .subtitle{
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    .best{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 3px;
-                        border: 1px solid white;
-                        width: 90px;
-                        height: 25px;
-                        background-color: rgb(255, 255, 255, 0.08);
-                        p{
-                            font-size: 13px;
-                        }
-                    }
-                }
-                p{
-                    font-weight: bold;
-                    font-size: 30px;
-                    span{
-                        font-weight: 100;
-                        font-size: 13px;
-                    }
-                    transition: .3s ease;
-                    &:hover{
-                        cursor: pointer;
-                        scale: 1.05;
-                    }
-                }
-                .sep{
-                    height: 5px;
-                    margin-top: 5px;
-                    margin-bottom: 5px;
-                    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-                    border-radius: 100%;
-                }
-                .infos{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 15px;
-                    .text{
-                        display: flex;
-                        
-                        gap: 20px;
-                        p{
-                            font-weight: 500;
+                border: 0.83px solid;
+                border-image-source: radial-gradient(103.58% 103.58% at 50% 50%, rgba(9, 89, 229, 0) 4.69%, #0959E5 100%);
 
-                            font-size: 15px;
-                        }
+
+              
+                .subtitle {
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  h3 {
+                    margin: 0;
+                  }
+                  .best {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    border: 1px solid white;
+                    width: 90px;
+                    height: 25px;
+                    background-color: rgba(255, 255, 255, 0.08);
+                    p {
+                      font-size: 13px;
+                      margin: 0;
                     }
-                    .buy{
-                        button{
-                            margin-top: 50px;
-                            border: none;
-                            background: linear-gradient(rgba(10, 48, 139, 1), rgba(30, 110, 251, 1));
-                            width: 100%;
-                            height: 35px;
-                            border: 1px solid white;
-                            border-radius: 7px;
-                            transition: .3s ease;
-                            &:hover{
-                                scale: 1.05;
-                            }
-                        }
-                    }
+                  }
                 }
-            }
+              
+                p {
+                  font-weight: bold;
+                  font-size: 30px;
+                  margin: 0;
+                  span {
+                    font-weight: 100;
+                    font-size: 13px;
+                  }
+                  transition: 0.3s ease;
+                  &:hover {
+                    cursor: pointer;
+                    scale: 1.05;
+                  }
+                }
+              
+                .sep {
+                  height: 5px;
+                  margin-top: 5px;
+                  margin-bottom: 5px;
+                  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+                  border-radius: 100%;
+                }
+              
+                .infos {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 15px;
+                  .text {
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    p {
+                      font-weight: 500;
+                      font-size: 15px;
+                      margin: 0;
+                    }
+                  }
+                  .buy {
+                    button {
+                      margin-top: 50px;
+                      border: none;
+                      background: radial-gradient(51.41% 105.14% at 50.04% 105.14%, #0A308B 0%, #1E6EFB 100%);
+                      width: 100%;
+                      height: 35px;
+                      border: 1px solid white;
+                      border-radius: 7px;
+                      color: white;
+                      transition: 0.3s ease;
+                      cursor: pointer;
+                      &:hover {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        scale: 1.05;
+                      }
+                    }
+                  }
+                }
+              }
+              
             .thirdCard{
-                border: 1px solid white;
+                border: 0.77px solid rgba(231, 235, 255, 1);
 
                 display: flex;
                 flex-direction: column;
@@ -221,7 +253,7 @@
                 padding: 15px;
                 width: 286px;
                 height: 500px;
-                background: linear-gradient(rgb(3, 25, 83, 0.7), rgb(23, 112, 247, 0.7));
+                background: radial-gradient(129.76% 100% at 50.04% 100%, rgba(3, 25, 83, 0.7) 0%, rgba(24, 116, 255, 0.7) 100%);
                 border-radius: 25px;
                 p{
                     font-weight: bold;
@@ -265,7 +297,11 @@
                             border: 1px solid white;
                             border-radius: 7px;
                             transition: .3s ease;
+                            cursor: pointer;
                             &:hover{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
                                 scale: 1.05;
                             }
                         }
@@ -275,3 +311,9 @@
         }
     }
 }
+
+
+
+
+
+

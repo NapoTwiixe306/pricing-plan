@@ -6,16 +6,16 @@
 
 }
 
-body{
+body {
     background-color: #010b25;
     background-image: url("../../img/back/First.svg"), url("../../img/back/Second.svg");
-
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position:  calc(left - 500px) ;
     background-attachment: fixed;
-    
 }
+
+
 
 a{
     text-decoration: none;

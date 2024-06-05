@@ -61,15 +61,14 @@ export default function Home() {
             </div>
             <div className="secondCard">
               <Image src={Ultime} alt=''/>
-             <div className="subtitle">
-              <h3>Ultime</h3>
+              <div className="subtitle">
+                <h3>Ultime</h3>
                 <div className="best">
                   <p>Best offer</p>
                 </div>
-             </div>
+              </div>
               <p>$439 <span>/month</span></p>
               <div className="sep"></div>
-
               <div className="infos">
                 <div className="text">
                   <Image src={Check} alt=''/>
@@ -85,7 +84,7 @@ export default function Home() {
                 </div>
                 <div className="text">
                   <Image src={Check} alt=''/>
-                  <p>+40 demande d&#39;itinéraires</p>
+                  <p>+40 demandes d&#39;itinéraires</p>
                 </div>
                 <div className="text">
                   <Image src={Check} alt=''/>
@@ -93,7 +92,7 @@ export default function Home() {
                 </div>
                 <div className="text">
                   <Image src={Check} alt=''/>
-                  <p>Résponse aux avis google inclus</p>
+                  <p>Réponse aux avis google inclus</p>
                 </div>
                 <div className="text">
                   <Image src={Check} alt=''/>
@@ -108,6 +107,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
             <div className="thirdCard">
               <Image src={Premium} alt=''/>
               <h3>Premium</h3>
